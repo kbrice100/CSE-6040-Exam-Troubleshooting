@@ -1,0 +1,88 @@
+# # template code to check the output variables on the exam
+# # this code checks the true output variables (the solution your output is being compared against)
+# # Checks all of the true output variables, then all of the returned output variables
+
+
+##********************************************************
+## Check returned and true output types and length
+
+# for k,v in returned_output_vars.items():
+
+##*** Use these checks for returning lists, dicts, sets, values************
+#     # check for datatype (list, dict)
+#     print(type(v))
+    
+#     # check for the length of the solution (use for lists and dicts)
+#     print(len(v))
+    
+#     # print the output for visual inspection - not if too long
+#     print(v)
+
+# for k,v in true_output_vars.items():
+
+##*** Use these checks for returning lists, dicts, sets, values************
+#     # check for datatype (list, dict)
+#     print(type(v))
+    
+#     # check for the length of the solution (use for lists and dicts)
+#     print(len(v))
+    
+#     # print the output for visual inspection - not if too long
+#     print(v)
+
+##**********************************************************
+
+##*** Use these checks for returning pandas dfs************
+#     
+#     # check for datatype (df)
+#     print(type(v))
+
+#     # check the datatypes of individual columns in a pandas df
+#     print(v.dtypes)
+   
+#     # check the shape of a pandas df
+#     rows_soln = v.shape[0]
+#     cols_soln = v.shape[1]
+#     print(rows_soln)
+#     print(cols_soln)
+    
+#     # check the column names of a pandas df
+#     my_list = v.columns.values.tolist()
+#     print(my_list)
+    
+#     # check the first 5 values of a pandas df
+#     true_df = v.copy()
+#     print(true_df.head(5))
+#
+#     # use the df.info() function
+#     true_df = v.copy()
+#     print(true_df.info())
+
+##*******************************************************
+ 
+##*** Use these checks for returning pandas dfs************
+#     # check for datatype (df)
+#     print(type(v))
+
+#     # check the datatypes of individual columns in a pandas df
+#     print(v.dtypes)
+    
+#     # check the shape of a pandas df
+#     rows_soln = v.shape[0]
+#     cols_soln = v.shape[1]
+#     print(rows_soln)
+#     print(cols_soln)
+    
+#     # check the column names of a pandas df
+#     my_ret_list = v.columns.values.tolist()
+#     print(my_ret_list)
+    
+#     # check the first 5 values of a pandas df
+#     ret_df = v.copy()
+#     print(ret_df.head(5))
+#
+#     # use the df.info() function
+#     ret_df = v.copy()
+#     print(ret_df.info())
+
+##**************************************************
